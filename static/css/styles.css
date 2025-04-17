@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+#video-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: solid aliceblue;
+    box-shadow: 1px 1px 2px 2px ;
+}
+
+#video,
+#captured-image {
+    width: 400px;
+    height: 300px;
+    border: 5px solid #444;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    background-color: #333;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#captured-image {
+    display: none;
+}
+
+#button-container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#predictedImage {
+    display: block;
+    margin: auto; /* This will horizontally center the image */
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    max-height: 100%; /* Ensure the image does not exceed the height of its container */
+  }
+  

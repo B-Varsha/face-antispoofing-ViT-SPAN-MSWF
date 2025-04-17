@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Face Antispoofing</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <h1>Face Antispoofing</h1>
+    <div id="video-container">
+      <video id="video" autoplay></video>
+      <img id="captured-image" alt="Captured Image">
+    </div>
+    <div id="button-container">
+      <button id="snap">Capture</button>
+      <button id="retake" style="display: none;">Retake</button>
+      <button id="save" style="display: none;">Save</button>
+      <button id="predict" style="display: none;">Predict</button>
+      <!-- Add this element to your HTML -->
+      <img id="predictedImage" src="" alt="">
+
+    </div>
+    <canvas id="canvas" style="display: none;" width="640" height="480"></canvas>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
